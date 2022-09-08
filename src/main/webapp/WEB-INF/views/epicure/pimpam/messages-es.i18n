@@ -1,0 +1,36 @@
+# messages-es.i18n
+#
+# Copyright (C) 2012-2022 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+epicure.pimpam.list.label.code=Código
+epicure.pimpam.list.label.instantiationMoment=Fecha de creación
+epicure.pimpam.list.label.title=Título
+epicure.pimpam.list.label.description=Descripción
+
+epicure.pimpam.form.label.code=Código
+epicure.pimpam.form.label.instantiationMoment=Fecha de creación
+epicure.pimpam.form.label.title=Título
+epicure.pimpam.form.label.description=Descripción
+epicure.pimpam.form.label.startPeriod=Comienzo periodo
+epicure.pimpam.form.label.finishPeriod=Final periodo
+epicure.pimpam.form.label.budget=Presupuesto
+epicure.pimpam.form.label.link=Link
+
+any.arifact.list.button.create = Crear
+chef.artifact.form.button.create = Crear
+chef.artifact.form.button.update = Actualizar
+chef.artifact.form.button.delete = Eliminar
+chef.artifact.form.button.publish = Publicar
+
+chef.artifact.retailPrice.not-able-currency = Moneda no aceptada
+chef.artifact.retailPrice.null = El precio de venta es obligatorio
+chef.artifact.code.repeated = Este código ya existe
+chef.artifact.code.repeated.retailPrice.non-negative = El precio de venta debe ser positivo
+chef.artifact.error.name.spam-threshold = Nombre por encima del umbral del spam
+chef.artifact.error.description.spam-threshold = Descripción por encima del umbral del spam

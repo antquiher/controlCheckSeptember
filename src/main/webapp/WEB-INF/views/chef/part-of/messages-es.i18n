@@ -1,0 +1,33 @@
+# messages-es.i18n
+#
+# Copyright (C) 2012-2022 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+any.partOf.list.label.quantity = Cantidad
+any.partOf.list.label.unit = Unidad
+any.partOf.list.label.recipe.heading = Cabecera de la receta
+any.partOf.list.label.artifact.name = Nombre del artefacto
+
+chef.partOf.list.button.create.utensil = Añadir utensilio
+chef.partOf.list.button.create.ingredient = Añadir ingrediente
+
+any.partOf.form.label.quantity = Cantidad
+any.partOf.form.label.unit = Unidad
+any.partOf.form.label.artifact.name = Nombre del artefacto
+any.partOf.form.label.artifact.code = Código del artefacto
+any.partOf.form.label.artifact.description = Descripción del artefacto
+any.partOf.form.label.artifact.retailPrice = Precio de venta del artefacto
+any.partOf.form.label.artifact.link = Enlace del artefacto
+any.partOf.form.label.artifact.type = Tipo de artefacto
+
+chef.partof.form.label.artifact = Selecciona el código del artefacto
+
+chef.partOf.form.button.create = Añade este artefacto
+chef.partOf.form.button.delete = Elimina este artefacto
+
+chef.partOf.error.quantity.negative = Debe tener una cantidad positiva

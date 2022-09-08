@@ -1,0 +1,3 @@
+"spamThreshold","defaultCurrency","acceptedCurrency","spamTuples"
+"0.10","EUR","EUR,USD,GBP","(sexy,01.0)"
+"0.10","USD","EUR,USD,GBP","(sexy,01.0)"

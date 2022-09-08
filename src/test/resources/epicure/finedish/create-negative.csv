@@ -1,0 +1,6 @@
+record-index,code,request,budget,initialDate,finishDate,url
+0,,,,,,
+1,AA:VVV-121,hola,ERE 100.00,2022/11/13 12:30,2023/02/02,
+2,AB:BBB-989,holaaa,USD -20.00,2022/11/13 12:30,2023/02/02,https://www.marca.com
+3,AB:BXX-119,holaaaaaa,USD 20.00,2022/09/13 12:30,2023/02/02,https://www.marca.com
+4,DB:DXX-209,holaaaaaaaaa,EUR 25.00,2022/11/13 12:30,2023/11/22,https://www.marca.com

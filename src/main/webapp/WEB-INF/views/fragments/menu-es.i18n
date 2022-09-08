@@ -1,0 +1,110 @@
+# menu-es.i18n
+#
+# Copyright (C) 2012-2022 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+﻿# master.menu #################################################################
+
+master.menu.home = Inicio
+master.menu.sign-up = Registrarse
+master.menu.sign-in = Entrar
+master.menu.sign-out = Salir
+
+# master.menu.anonymous #######################################################
+
+master.menu.anonymous = Anónimo
+master.menu.anonymous.favourite-link.antquiher1 = 54185066X: Quijano Herrera, Antonio
+master.menu.anonymous.favourite-link.rafavisan = 47557390Z: Avila Sanchez, Rafael
+master.menu.anonymous.favourite-link.alefrarod = 53772321T: Fraile Rodríguez, Alejandro
+master.menu.anonymous.favourite-link.diecrequi = 30260025Y: Crespo Quinta, Diego
+master.menu.anonymous.favourite-link.pedolirod = 20231423W: Oliva Rodríguez, Pedro
+master.menu.anonymous.favourite-link.alfcadmor = 49134556R: Cadenas Morales, Alfonso
+master.menu.authenticated.user-account = Cuentas de usuarios
+
+master.menu.anonymous.artifact.ingredient = Ingredientes
+master.menu.anonymous.artifact.utensil = Utensilios de cocina
+
+
+master.menu.anonymous.recipe = Recetas
+
+master.menu.authenticated.system-setting= Configuración del sistema
+
+master.menu.anonymous.recipe = Recetas
+
+
+master.menu.chef = Chef
+master.menu.epicure = Epicure
+
+# master.menu.bulletin ####################################################
+master.menu.bulletin = Boletín
+master.menu.authenticated.bulletin = Boletín
+
+
+# master.menu.authenticated ########################################################
+
+master.menu.authenticated = Autenticado
+master.menu.authenticated.bulletin= Boletín
+master.menu.anonymous.peep = Peeps
+master.menu.any = Anonimo
+# master.menu.administrator ###################################################
+
+master.menu.administrator = Administrador
+master.menu.administrator.dashboard = Panel de indicadores
+master.menu.administrator.admin-dashboard = Panel de administrador
+master.menu.administrator.user-accounts = Cuentas de usuario
+master.menu.administrator.populate-initial = Poblar BD (inicial)
+master.menu.administrator.populate-sample = Poblar BD (ejemplos)
+master.menu.administrator.shut-down = Parar el sistema
+master.menu.administrator.system-setting = Configuraciones del sistema
+# master.menu.chef ########################################################
+
+master.menu.chef = Chef
+master.menu.chef.fine-dish = Platos sofisticados
+master.menu.chef.pimpam = Pimpam
+master.menu.epicure.pimpam = Pimpam
+
+# master.menu.epicure ########################################################
+
+master.menu.epicure.fine-dish = Platos sofisticados
+
+# master.menu.provider ########################################################
+
+master.menu.provider = Proveedor
+master.menu.provider.favourite-link = Enlace favorito
+
+# master.menu.consumer ##########################################################
+
+master.menu.consumer = Consumidor
+master.menu.consumer.favourite-link = Enlace favorito
+
+# master.menu.user-account ####################################################
+
+master.menu.user-account = Cuenta
+master.menu.user-account.general-data = Datos generales
+master.menu.user-account.provider = Datos de proveedor
+master.menu.user-account.become-provider = Hazte proveedor
+master.menu.user-account.consumer = Datos de consumidor
+master.menu.user-account.become-consumer = Hazte consumidor
+
+# master.menu.chef ###############################################################
+
+master.menu.chef = Chef
+master.menu.chef.memorandum = Memoria
+master.menu.chef.recipes = Recetas
+
+# master.menu.epicure ###############################################################
+master.menu.epicure = Sivarita
+master.menu.epicure.memorandum = Memoria
+master.menu.epicure.epicure-dashboard = Panel del sivarita
+
+
+master.menu.user-account.become-chef = Convertirse en Chef
+master.menu.user-account.chef = Chef
+master.menu.user-account.become-epicure = Convertirse en Sivarita
+master.menu.user-account.epicure = Sivarita
+

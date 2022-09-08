@@ -1,0 +1,2 @@
+key,spam-threshold,default-currency,accepted-currencies,spam-tuples
+system-setting-01,0.1,"EUR","EUR,USD,GBP","(sex, 0.10), (viagra, 0.10), (cialis, 0.10), (hard core, 0.10), (sexy, 0.05), (nigeria, 0.05), (you’ve won, 0.05), (one million, 0.05)"

@@ -1,0 +1,34 @@
+# i18n-es.i18n
+#
+# Copyright (C) 2012-2022 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+epicure.fine-dish.form.label.status = Estado
+epicure.fine-dish.form.label.code = Código
+epicure.fine-dish.form.label.request = Petición
+epicure.fine-dish.form.label.budget = Presupuesto
+epicure.fine-dish.form.label.initialDate = Fecha inicial
+epicure.fine-dish.form.label.finishDate = Fecha final
+epicure.fine-dish.form.label.url = Url
+epicure.fine-dish.form.label.select.chef = Chef
+epicure.fine-dish.form.label.chef = Chef
+epicure.fine-dish.form.button.create = Crear
+epicure.fine-dish.form.button.update = Actualizar
+epicure.fine-dish.form.button.delete = Eliminar
+epicure.fine-dish.form.button.publish = Publicar
+
+epicure.fine-dish.list.label.code = Código
+epicure.fine-dish.list.label.request = Petición
+epicure.fine-dish.list.label.budget = Presupuesto
+epicure.fine-dish.list.button.create = Crear
+
+epicure.finedish.error.initialDate = Como mínimo debe ser un mes después de crearlo
+epicure.finedish.error.finishDate = Como mínimo debe ser un mes después de empezar
+epicure.finedish.error.budget = La cantidad debe ser positiva
+epicure.finedish.budget.not-able-currency = Moneda no aceptada
+epicure.finedish.error.request.spam-threshold = Petición por encima del umbral de spam

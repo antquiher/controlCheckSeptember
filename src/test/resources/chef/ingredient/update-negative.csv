@@ -1,0 +1,7 @@
+record-index,name,code,description,retail-price, link
+0,prueba 1,AAA-0003848,esta es la primera prueba,EUR 10.91,
+0,a,AAA-001,a,USD -0.01,
+0,prueba 3,AAA-003,256 caracteresaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa,EUR 143.00,
+0,,AAA-004,esta es la primera prueba,EUR 10.91,
+0,a,AAA-005,,EUR 10.91,
+0,a,AAA-005,a,EUR 10.91,a

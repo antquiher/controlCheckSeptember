@@ -1,0 +1,4 @@
+key,status,code,request,budget,initialDate,finishDate,url,key:chef,key:epicure,isPublish
+fine-dish-01,PROPOSED,AA:AAA-001,"This is an average request",EUR 0.01,"2023/06/30 16:30","2023/07/30 16:30",null,chef-01,epicure-01, false
+fine-dish-02,DENIED,AA:AAA-002,"r",USD 13.95,"2023/04/01 10:34","2023/05/08 20:00","https://www.acme.com",chef-01,epicure-02, false
+fine-dish-03,ACCEPTED,AA:AAA-003,"This is a very long request to test the restriction on this attribute. It has to be at least this long to be okay and don't breach any restrictions. If there are more characters in this field, the framework will throw an exception to allow us know about i",USD 13.95,"2023/04/01 10:34","2023/05/08 20:00","https://www.acme.com",chef-01,epicure-02, false

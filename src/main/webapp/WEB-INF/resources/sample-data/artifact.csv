@@ -1,0 +1,7 @@
+key,name,code,description,retailPrice,link,type,isPublished,key:chef
+artifact-01,Pollo,PO:KFC-123,para chuparse los dedos,EUR 0.01,https://es.wikipedia.org/wiki/Artefacto,INGREDIENT,false,chef-01
+artifact-02,Esta cadena tiene 101 caracteres aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa,SI:LLA-555,Esta cadena tiene 256 caracteres aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa,EUR 201854.01,null,UTENSIL,true,chef-01
+artifact-03,C,III-111,G,EUR 0.01,https://github.com/antquiher/Acme-Recipes-22.8.git,INGREDIENT,false,chef-01
+artifact-04,Pollito,PO:KFC-124,para chuparse los dedos,EUR 0.01,https://www.kfc.es/,UTENSIL,false,chef-01
+artifact-05,"w",XP:NBO-123,"xpnboxpnboxpnboxpnboxpnboxpnboxpnboxpnboxpnboxpnboxpnboxpnboxpnboxpnboxpnboxpnboxpnboxpnboxpnboxpnboxpnboxpnboxpnboxpnboxpnboxpnboxpnboxpnboxpnboxpnboxpnboxpnboxpnboxpnboxpnboxpnboxpnboxpnboxpnboxpnboxpnboxpnboxpnboxpnboxpnboxpnboxpnboxpnboxpnboxpnboxpnbo",80.90 EUR,"https://www.youtube.com/watch?v=pXaSFN9VYbw",UTENSIL,true,chef-01
+artifact-06,"this is a name of 101 characters :)))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))",NBO-123,"a",0.01 EUR,null,UTENSIL,false,chef-01

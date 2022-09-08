@@ -1,0 +1,32 @@
+# messages-en.i18n
+#
+# Copyright (C) 2012-2022 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+chef.recipe.list.label.heading = Heading
+chef.recipe.list.label.code = Code
+chef.recipe.list.button.create = New recipe
+
+chef.recipe.form.label.heading = Heading
+chef.recipe.form.label.code = Code
+chef.recipe.form.label.description = Description
+chef.recipe.form.label.preparation-notes = Preparation notes
+chef.recipe.form.label.link = Link
+chef.recipe.form.button.partOf = Find the Artifact used by this recipe
+chef.recipe.form.button.create = Create recipe
+chef.recipe.form.button.update = Update recipe
+chef.recipe.form.button.delete = Delete recipe
+chef.recipe.form.button.publish = Publish recipe
+
+chef.recipe.error.heading.a-lot-of-words = Heading above 101 characters
+chef.recipe.error.heading.spam-threshold = Heading with a higher spam value than threshold
+chef.recipe.error.code.repeated = This code already exists
+chef.recipe.error.description.a-lot-of-words = Description above 256 characters
+chef.recipe.error.description.spam-threshold = Description with a higher spam value than threshold
+chef.recipe.error.preparationNotes.a-lot-of-words = Preparation notes above 256 characters
+chef.recipe.error.preparationNotes.spam-threshold = Preparation notes with a higher spam value than threshold

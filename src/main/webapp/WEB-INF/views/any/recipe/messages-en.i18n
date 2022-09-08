@@ -1,0 +1,19 @@
+# messages-en.i18n
+#
+# Copyright (C) 2012-2022 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+any.recipe.list.label.heading = Heading
+any.recipe.list.label.code = Code
+
+any.recipe.form.label.heading = Heading
+any.recipe.form.label.code = Code
+any.recipe.form.label.description = Description
+any.recipe.form.label.preparation-notes = Preparation notes
+any.recipe.form.label.link = Link
+any.recipe.form.button.partOf = Find the Artifact used by this recipe

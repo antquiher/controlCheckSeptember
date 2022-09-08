@@ -1,0 +1,11 @@
+key,enabled,identity,password,username
+user-account-chef-01,true,"UserIdentity{name: 'Chef', surname: 'One', email: 'chefOne@acme.com'}",chef1,chef1
+user-account-chef-02,true,"UserIdentity{name: 'Chef', surname: 'Two', email: 'chefTwo@acme.com'}",chef2,chef2
+user-account-chef-03,true,"UserIdentity{name: 'Chef', surname: 'Three', email: 'chefThree@acme.com'}",chef3,chef3
+user-account-chef-04,true,"UserIdentity{name: 'Chef', surname: 'Four', email: 'chefFour@acme.com'}",chef4,chef4
+user-account-chef-05,true,"UserIdentity{name: 'Chef', surname: 'Five', email: 'chefFive@acme.com'}",chef5,chef5
+user-account-epicure-01,true,"UserIdentity{name: 'epicure', surname: 'One', email: 'epicureOne@acme.com'}",epicure1,epicure1
+user-account-epicure-02,true,"UserIdentity{name: 'epicure', surname: 'Two', email: 'epicureTwo@acme.com'}",epicure2,epicure2
+user-account-epicure-03,true,"UserIdentity{name: 'epicure', surname: 'Three', email: 'epicureThree@acme.com'}",epicure3,epicure3
+user-account-epicure-04,true,"UserIdentity{name: 'epicure', surname: 'Four', email: 'epicureFour@acme.com'}",epicure4,epicure4
+user-account-epicure-05,true,"UserIdentity{name: 'epicure', surname: 'Five', email: 'epicureFive@acme.com'}",epicure5,epicure5

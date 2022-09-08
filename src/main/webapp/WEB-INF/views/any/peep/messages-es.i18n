@@ -1,0 +1,30 @@
+# i18n-es.i18n
+#
+# Copyright (C) 2012-2022 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+any.peep.list.label.instantiationMoment = Fecha
+any.peep.list.label.heading = Cabecera
+any.peep.list.label.writer = Escritor
+any.peep.list.label.text = Texto
+any.peep.list.label.email = Email
+any.peep.list.button.create = Crear
+any.peep.form.label.instantiationMoment = Fecha de creación
+
+
+any.peep.form.label.heading = Cabecera
+any.peep.form.label.writer = Escritor
+any.peep.form.label.text = Texto
+any.peep.form.label.email = Email
+any.peep.form.label.confirm = Confirmar
+any.peep.form.error.must-confirm = Debe confirmar
+any.peep.form.button.create = Crear
+
+any.peep.error.heading.spam-threshold = Cabecera con un umbral de spam superior al del sistema
+any.peep.error.writer.spam-threshold = Escritor con un umbral de spam superior al del sistema
+any.peep.error.text.spam-threshold = Texto con un umbral de spam superior al del sistema

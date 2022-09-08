@@ -1,0 +1,22 @@
+# messages-es.i18n
+#
+# Copyright (C) 2012-2022 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+any.artifact.list.label.name = Nombre
+any.artifact.list.label.code = Código
+any.artifact.list.label.description = Descripción
+any.artifact.list.label.retail-price = Precio de venta
+any.artifact.list.label.link = Link
+
+any.artifact.form.label.name = Nombre
+any.artifact.form.label.code = Código
+any.artifact.form.label.description = Descripción
+any.artifact.form.label.retail-price = Precio de venta
+any.artifact.form.label.link = Link
+any.artifact.form.button.partOf = Encuentra las recetas que usan este Artefacto

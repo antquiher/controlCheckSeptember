@@ -1,0 +1,6 @@
+key,key:userAccount,organisation,assertion,url
+chef-01,user-account-chef-01,"o","This is an average assertion",null
+chef-02,user-account-chef-02,"Acme Inc.","This is an average assertion","https://www.acme.com"
+chef-03,user-account-chef-03,"This is a very long organisation to test the restriction on this attribute. It has to be at least th","This is an average assertion","https://www.acme.com"
+chef-04,user-account-chef-04,"Acme Inc.","a","https://www.acme.com"
+chef-05,user-account-chef-05,"Acme Inc.","This is a very long assertion to test the restriction on this attribute. It has to be at least this long to be okay and don't breach any restrictions. If there are more characters in this field, the framework will throw an exception to allow us know about","https://www.acme.com"

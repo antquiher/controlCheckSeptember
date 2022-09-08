@@ -1,0 +1,108 @@
+# menu-en.i18n
+#
+# Copyright (C) 2012-2022 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+# master.menu #################################################################
+
+master.menu.home = Home
+master.menu.sign-up = Sign up
+master.menu.sign-in = Sign in
+master.menu.sign-out = Sign out
+
+# master.menu.anonymous #######################################################
+
+master.menu.anonymous = Anonymous
+master.menu.anonymous.favourite-link.antquiher1 = 54185066X: Quijano Herrera, Antonio
+master.menu.anonymous.favourite-link.rafavisan = 47557390Z: Avila Sanchez, Rafael
+master.menu.anonymous.favourite-link.alefrarod = 53772321T: Fraile Rodríguez, Alejandro
+master.menu.anonymous.favourite-link.diecrequi = 30260025Y: Crespo Quinta, Diego
+master.menu.anonymous.favourite-link.pedolirod = 20231423W: Oliva Rodríguez, Pedro
+master.menu.anonymous.favourite-link.alfcadmor = 49134556R: Cadenas Morales, Alfonso
+master.menu.authenticated.user-account = User Accounts
+
+master.menu.anonymous.artifact.ingredient = Ingredients
+master.menu.anonymous.artifact.utensil = Kitchen utensils
+
+master.menu.anonymous.recipe = Recipes
+
+
+
+master.menu.chef = Chef
+master.menu.epicure = Epicure
+
+
+
+# master.menu.bulletin ####################################################
+master.menu.bulletin = Bulletin
+master.menu.authenticated.bulletin = Bulletin
+
+
+# master.menu.authenticated ########################################################
+
+master.menu.authenticated = Authenticated
+master.menu.authenticated.bulletin= Bulletin
+master.menu.anonymous.peep = Peeps
+master.menu.any = Anonymous
+master.menu.authenticated.system-setting= System Configuration
+# master.menu.administrator ###################################################
+
+master.menu.administrator = Administrator
+master.menu.administrator.dashboard = Dashboard
+master.menu.administrator.admin-dashboard = Administrator dashboard
+master.menu.administrator.user-accounts = User accounts
+master.menu.administrator.populate-initial = Populate DB (initial)
+master.menu.administrator.populate-sample = Populate DB (samples)
+master.menu.administrator.shut-down = Shut down
+master.menu.administrator.system-setting = System settings
+# master.menu.chef ########################################################
+
+master.menu.chef = Chef
+master.menu.chef.fine-dish = Fine Dish
+master.menu.chef.pimpam = Pimpam
+master.menu.epicure.pimpam = Pimpam
+
+# master.menu.epicure ########################################################
+
+master.menu.epicure.fine-dish = Fine Dish
+
+# master.menu.provider ########################################################
+
+master.menu.provider = Provider
+master.menu.provider.favourite-link = Favourite link
+
+# master.menu.consumer ##########################################################
+
+master.menu.consumer = Consumer
+master.menu.consumer.favourite-link = Favourite link
+
+# master.menu.user-account ####################################################
+
+master.menu.user-account = Account
+master.menu.user-account.general-data = General data
+master.menu.user-account.provider = Provider data
+master.menu.user-account.become-provider = Become a provider
+master.menu.user-account.consumer = Consumer data
+master.menu.user-account.become-consumer = Become a consumer
+
+# master.menu.chef ###############################################################
+master.menu.chef = Chef
+master.menu.chef.memorandum = Memorandum
+master.menu.chef.recipes = Recipes
+
+# master.menu.epicure ###############################################################
+master.menu.epicure = Epicure
+master.menu.epicure.memorandum = Memorandum
+master.menu.epicure.epicure-dashboard = Epicure dashboard
+
+
+
+master.menu.user-account.become-chef = Become Chef
+master.menu.user-account.chef = Chef
+master.menu.user-account.become-epicure = Become Epicure
+master.menu.user-account.epicure = Epicure

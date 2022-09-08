@@ -1,0 +1,5 @@
+key,instantiation-moment,heading,text,flag,link
+bulletin-01,"1900/01/01 00:00",Bulletin heading, The text of a bulletin,true,https://www.example.com
+bulletin-02,"2022/08/01 10:00", Receta tarta queso, Quiero saber la receta de la tarta de queso,false,https://www.dulcespostres.com/tarta-de-queso-fria/
+bulletin-03,"2022/01/30 16:30",e,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non nisl tincidunt, facilisis lacus id, euismod libero. Vestibulum cursus nunc odio, sit amet convallis dui fermentum et. Nullam odio erat, consectetur sed lobortis eget, mollis quis augue. M",false,null
+bulletin-04,"2022/04/10 14:30","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non nisl tincidunt, facilisis lacu s",e,false,https://www.example.com
