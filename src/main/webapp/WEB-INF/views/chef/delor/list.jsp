@@ -22,4 +22,4 @@
 	<acme:list-column code="chef.pimpam.list.label.description" path="description" width="30%"/>
 </acme:list>
 
-<acme:button code="chef.pimpam.list.button.create" action="/chef/pimpam/create"/>
+<acme:button code="chef.pimpam.list.button.create" action="/chef/delor/create"/>

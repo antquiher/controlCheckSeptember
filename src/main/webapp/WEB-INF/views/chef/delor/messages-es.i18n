@@ -22,6 +22,7 @@ chef.pimpam.form.label.startPeriod=Comienzo periodo
 chef.pimpam.form.label.finishPeriod=Final periodo
 chef.pimpam.form.label.budget=Presupuesto
 chef.pimpam.form.label.link=Link
+chef.pimpam.form.label.seis-numeros = Introduce 6 numeros
 
 any.arifact.list.button.create = Crear
 chef.artifact.form.button.create = Crear
@@ -32,6 +33,7 @@ chef.pimpam.form.button.create = Crear
 chef.pimpam.form.button.update = Actualizar
 chef.pimpam.form.button.delete = Borrar
 chef.pimpam.list.button.create = Crear
+chef.pimpam.form.label.artifact = Muestra las propiedades de este artefacto
 
 chef.artifact.retailPrice.not-able-currency = Moneda no aceptada
 chef.artifact.retailPrice.null = El precio de venta es obligatorio
@@ -39,3 +41,5 @@ chef.artifact.code.repeated = Este código ya existe
 chef.artifact.code.repeated.retailPrice.non-negative = El precio de venta debe ser positivo
 chef.artifact.error.name.spam-threshold = Nombre por encima del umbral del spam
 chef.artifact.error.description.spam-threshold = Descripción por encima del umbral del spam
+chef.pimpam.error.not-valid-length-string.auxiliarSeisNumeros = Debe de tener 6 de longitud la cadena
+chef.pimpam.error.not-valid-string-formatter.auxiliarSeisNumeros = Debe de ser un integer

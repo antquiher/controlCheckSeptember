@@ -12,9 +12,9 @@ public class ChefCreatePimpamTest extends TestHarness{
 	@CsvFileSource(resources = "/chef/pimpam/create.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
 	public void positive(final int recordIndex, final String title, final String description,
-		final String startPeriod, final String finishPeriod , final String budget, final String link) {
+		final String startPeriod, final String finishPeriod , final String budget, final String link, final String code) {
 		super.signIn("chef1", "chef1");
-		super.clickOnMenu("Chef", "Pimpam");
+		super.clickOnMenu("Chef", "Delor");
 		super.checkListingExists();
 		
 		super.clickOnButton("Create");
@@ -24,6 +24,7 @@ public class ChefCreatePimpamTest extends TestHarness{
 		super.fillInputBoxIn("finishPeriod", finishPeriod);
 		super.fillInputBoxIn("budget", budget);
 		super.fillInputBoxIn("link", link);
+		super.fillInputBoxIn("auxiliarSeisNumeros", code);
 		super.clickOnSubmit("Create");
 
 		super.checkNotErrorsExist();
@@ -33,11 +34,11 @@ public class ChefCreatePimpamTest extends TestHarness{
 	
 	@ParameterizedTest
 	@CsvFileSource(resources = "/chef/pimpam/create-negative.csv", encoding = "utf-8", numLinesToSkip = 1)
-	@Order(10)
+	@Order(20)
 	public void negative(final int recordIndex, final String title, final String description,
 			final String startPeriod, final String finishPeriod , final String budget, final String link) {
 		super.signIn("chef1", "chef1");
-		super.clickOnMenu("Chef", "Pimpam");
+		super.clickOnMenu("Chef", "Delor");
 		super.checkListingExists();
 		
 		super.clickOnButton("Create");

@@ -65,8 +65,7 @@ master.menu.administrator.system-setting = Configuraciones del sistema
 
 master.menu.chef = Chef
 master.menu.chef.fine-dish = Platos sofisticados
-master.menu.chef.pimpam = Pimpam
-master.menu.epicure.pimpam = Pimpam
+master.menu.chef.pimpam = delor
 
 # master.menu.epicure ########################################################
 

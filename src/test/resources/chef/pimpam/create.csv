@@ -1,2 +1,2 @@
-record-index,title,description,startPeriod,finishPeriod,budget,link,
-0,hola,holaaaaaa,2023/05/07 16:30,2023/05/18 16:30,EUR 188.00,
+record-index,title,description,startPeriod,finishPeriod,budget,link,code
+0,hola,holaaaaaa,2023/05/07 16:30,2023/05/18 16:30,EUR 188.00,"",875463

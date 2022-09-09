@@ -14,7 +14,7 @@ public class ChefPimpamUpdateTest extends TestHarness{
 	public void positive(final int recordIndex, final String title, final String description,
 		final String startPeriod, final String finishPeriod , final String budget, final String link) {
 		super.signIn("chef1", "chef1");
-		super.clickOnMenu("Chef", "Pimpam");
+		super.clickOnMenu("Chef", "Delor");
 		super.checkListingExists();
 		
 		super.clickOnButton("Create");
@@ -37,7 +37,7 @@ public class ChefPimpamUpdateTest extends TestHarness{
 	public void update(final int recordIndex, final String title, final String description,
 		final String startPeriod, final String finishPeriod, final String budget, final String link) {
 		super.signIn("chef1", "chef1");
-		super.clickOnMenu("Chef", "Pimpam");
+		super.clickOnMenu("Chef", "Delor");
 		super.checkListingExists();
 
 		super.clickOnListingRecord(recordIndex);

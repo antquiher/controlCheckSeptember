@@ -120,34 +120,34 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		
 		final Map<String,Double> averagePimpamBudget = new HashMap<String, Double>();
 		for(final String currencies : acceptedCurrencies) {
-			final Double averageBudget = this.repository.calcAveragePimpamBudgetByCurrency(currencies);
+			final Double averageBudget = this.repository.calcAveragePimpamBudgetByCurrency(currencies, ArtifactType.INGREDIENT);
 			final Double averageBudgetFormat = this.formatDouble(averageBudget);
 			averagePimpamBudget.put(currencies, averageBudgetFormat != null ? averageBudgetFormat : 0);
 		}
 		
 		final Map<String,Double> deviationPimpamBudget = new HashMap<String, Double>();
 		for(final String currencies : acceptedCurrencies) {
-			final Double deviationBudget = this.repository.calcDeviationPimpamBudgetByCurrency(currencies);
+			final Double deviationBudget = this.repository.calcDeviationPimpamBudgetByCurrency(currencies, ArtifactType.INGREDIENT);
 			final Double deviationBudgetFormat = this.formatDouble(deviationBudget);
 			deviationPimpamBudget.put(currencies, deviationBudgetFormat != null ? deviationBudgetFormat : 0);
 		}
 		
 		final Map<String,Double> maximumPimpamBudget = new HashMap<String, Double>();
 		for(final String currencies : acceptedCurrencies) {
-			final Double maximumBudget = this.repository.calcMaximumPimpamBudgetByCurrency(currencies);
+			final Double maximumBudget = this.repository.calcMaximumPimpamBudgetByCurrency(currencies, ArtifactType.INGREDIENT);
 			final Double maximumBudgetFormat = this.formatDouble(maximumBudget);
 			maximumPimpamBudget.put(currencies, maximumBudgetFormat != null ? maximumBudgetFormat : 0);
 		}
 		
 		final Map<String,Double> minimumPimpamBudget = new HashMap<String, Double>();
 		for(final String currencies : acceptedCurrencies) {
-			final Double minimumBudget = this.repository.calcMinimumPimpamBudgetByCurrency(currencies);
+			final Double minimumBudget = this.repository.calcMinimumPimpamBudgetByCurrency(currencies, ArtifactType.INGREDIENT);
 			final Double minimumBudgetFormat = this.formatDouble(minimumBudget);
 			minimumPimpamBudget.put(currencies, minimumBudgetFormat != null ? minimumBudgetFormat : 0);
 		}
 		
 		final Integer nArtifacts = this.repository.findAllArtifact().size();
-		final Integer nPimpams = this.repository.findAllPimpam().size();
+		final Integer nPimpams = this.repository.findAllPimpam(ArtifactType.INGREDIENT).size();
 		Double ratioOfArtifactsWithPimpam = (double) nPimpams / nArtifacts;
 		
 		

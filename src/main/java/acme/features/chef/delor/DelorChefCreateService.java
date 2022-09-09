@@ -1,4 +1,4 @@
-package acme.features.chef.pimpam;
+package acme.features.chef.delor;
 
 
 
@@ -17,7 +17,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.artifact.Artifact;
-import acme.entities.pimpam.Pimpam;
+import acme.entities.artifact.ArtifactType;
+import acme.entities.delor.Delor;
 import acme.entities.systemSetting.SystemSettings;
 import acme.framework.components.models.Model;
 import acme.framework.controllers.Errors;
@@ -27,29 +28,29 @@ import acme.framework.services.AbstractCreateService;
 import acme.roles.Chef;
 
 @Service
-public class PimpamChefCreateService implements AbstractCreateService<Chef, Pimpam>{
+public class DelorChefCreateService implements AbstractCreateService<Chef, Delor>{
 	
 	@Autowired
-	protected PimpamRepository repository;
+	protected DelorRepository repository;
 		
 	// AbstractCreateService<Patron, Patronage> interface ---------------------
 	
 	@Override
-	public boolean authorise(final Request<Pimpam> request) {
+	public boolean authorise(final Request<Delor> request) {
 		assert request != null;
 		
 		return true;
 	}
 
 	@Override
-	public void bind(final Request<Pimpam> request, final Pimpam entity, final Errors errors) {
+	public void bind(final Request<Delor> request, final Delor entity, final Errors errors) {
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
 
 		
 		
-		request.bind(entity, errors, "title", "description", "startPeriod", "finishPeriod", "budget", "link");
+		request.bind(entity, errors, "title", "description", "startPeriod", "finishPeriod", "budget", "link", "auxiliarSeisNumeros");
 		
 		Model model;
 		Artifact selectedArtifact;
@@ -57,44 +58,47 @@ public class PimpamChefCreateService implements AbstractCreateService<Chef, Pimp
 		model = request.getModel();
 		selectedArtifact = this.repository.findArtifactById(Integer.parseInt(model.getString("artifacts")));
 
+		entity.setAuxiliarSeisNumeros(model.getString("auxiliarSeisNumeros"));
 		entity.setArtifact(selectedArtifact);
 
 	}
 
 	@Override
-	public void unbind(final Request<Pimpam> request, final Pimpam entity, final Model model) {
+	public void unbind(final Request<Delor> request, final Delor entity, final Model model) {
 		assert request != null;
 		assert entity != null;
 		assert model != null;
 		
 		List<Artifact> artifacts;
 		
-		List<Pimpam> lp=this.repository.findAllPimpam();
+		List<Delor> lp=this.repository.findAllPimpam();
 		Set<Artifact> la= new HashSet<Artifact>();
-		for(Pimpam p:lp) {
+		for(Delor p:lp) {
 			la.add(p.getArtifact());
 		}
 		
-		artifacts=this.repository.findAllArtifact();	
+		artifacts=this.repository.findAllArtifact(ArtifactType.INGREDIENT);	
 	
 		request.unbind(entity, model, "title", "description", "startPeriod", "finishPeriod", "budget", "link");
 		
 		model.setAttribute("isNew", true);
 		model.setAttribute("artifacts", artifacts.stream().filter(x->!x.isPublished()).filter(y->!la.contains(y)).collect(Collectors.toList()));
+		model.setAttribute("auxiliarSeisNumeros", entity.getAuxiliarSeisNumeros());
 	}
 
 	@Override
-	public Pimpam instantiate(final Request<Pimpam> request) {
+	public Delor instantiate(final Request<Delor> request) {
 		assert request != null;
 		
-		Pimpam result;
+		Delor result;
 		
 		
 		
-		result = new Pimpam();
+		result = new Delor();
 		LocalDate localDate = LocalDate.now();
-		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yy/MM/dd");
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyMMdd");
 		String formattedString = localDate.format(formatter);
+		formattedString = "000000:"+formattedString;
 		result.setCode(formattedString);
 		result.setInstantiationMoment(Calendar.getInstance().getTime());
 		
@@ -102,7 +106,7 @@ public class PimpamChefCreateService implements AbstractCreateService<Chef, Pimp
 	}
 
 	@Override
-	public void validate(final Request<Pimpam> request, final Pimpam entity, final Errors errors) {
+	public void validate(final Request<Delor> request, final Delor entity, final Errors errors) {
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
@@ -133,7 +137,19 @@ public class PimpamChefCreateService implements AbstractCreateService<Chef, Pimp
 					"chef.pimpam.error.week.finishPeriod");
 		}
 		
-		
+		if(!errors.hasErrors("auxiliarSeisNumeros")) {
+			errors.state(request, entity.getAuxiliarSeisNumeros().length()==6, "auxiliarSeisNumeros",
+				"chef.pimpam.error.not-valid-length-string.auxiliarSeisNumeros");
+			boolean bol = true;
+			try {
+		        Integer.parseInt(entity.getAuxiliarSeisNumeros());
+		    } catch (NumberFormatException nfe) {
+		        bol = false;
+		    }
+		    
+			errors.state(request, bol, "auxiliarSeisNumeros",
+				"chef.pimpam.error.not-valid-string-formatter.auxiliarSeisNumeros");
+		}
 		
 		
 
@@ -151,14 +167,37 @@ public class PimpamChefCreateService implements AbstractCreateService<Chef, Pimp
 		}
 		
 
+		if (!errors.hasErrors("artifacts")) {
+			errors.state(request, entity.getArtifact()!=null, "artifacts",
+					"chef.pimpam.error.null.artifacts");
+		}
 		
 		
 	}
 
+	public static boolean isNumeric(String strNum) {
+	    if (strNum == null) {
+	        return false;
+	    }
+	    try {
+	        double d = Double.parseDouble(strNum);
+	    } catch (NumberFormatException nfe) {
+	        return false;
+	    }
+	    return true;
+	}
+	
 	@Override
-	public void create(final Request<Pimpam> request, final Pimpam entity) {
+	public void create(final Request<Delor> request, final Delor entity) {
 		assert request != null;
 		assert entity != null;
+		
+		LocalDate localDate = LocalDate.now();
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyMMdd");
+		String formattedString = localDate.format(formatter);
+		String aux = entity.getAuxiliarSeisNumeros();
+		formattedString = aux+":"+formattedString;
+		entity.setCode(formattedString);
 		
 		this.repository.save(entity);
 	}

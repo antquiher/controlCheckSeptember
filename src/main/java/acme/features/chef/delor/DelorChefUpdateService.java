@@ -1,4 +1,4 @@
-package acme.features.chef.pimpam;
+package acme.features.chef.delor;
 
 
 
@@ -9,8 +9,8 @@ import java.util.Calendar;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import acme.entities.delor.Delor;
 import acme.entities.fineDish.FineDish;
-import acme.entities.pimpam.Pimpam;
 import acme.entities.systemSetting.SystemSettings;
 import acme.framework.components.models.Model;
 import acme.framework.controllers.Errors;
@@ -23,15 +23,15 @@ import acme.framework.services.AbstractUpdateService;
 import acme.roles.Chef;
 
 @Service
-public class PimpamChefUpdateService implements AbstractUpdateService<Chef, Pimpam>{
+public class DelorChefUpdateService implements AbstractUpdateService<Chef, Delor>{
 	
 	@Autowired
-	protected PimpamRepository repository;
+	protected DelorRepository repository;
 	
 	// AbstractUpdateService<Patron, Patronage> interface ---------------------
 	
 	@Override
-	public boolean authorise(final Request<Pimpam> request) {
+	public boolean authorise(final Request<Delor> request) {
 		assert request != null;
 		
 
@@ -40,7 +40,7 @@ public class PimpamChefUpdateService implements AbstractUpdateService<Chef, Pimp
 	}
 
 	@Override
-	public void bind(final Request<Pimpam> request, final Pimpam entity, final Errors errors) {
+	public void bind(final Request<Delor> request, final Delor entity, final Errors errors) {
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
@@ -54,7 +54,7 @@ public class PimpamChefUpdateService implements AbstractUpdateService<Chef, Pimp
 	}
 
 	@Override
-	public void unbind(final Request<Pimpam> request, final Pimpam entity, final Model model) {
+	public void unbind(final Request<Delor> request, final Delor entity, final Model model) {
 		assert request != null;
 		assert entity != null;
 		assert model != null;
@@ -70,10 +70,10 @@ public class PimpamChefUpdateService implements AbstractUpdateService<Chef, Pimp
 	}
 
 	@Override
-	public Pimpam findOne(final Request<Pimpam> request) {
+	public Delor findOne(final Request<Delor> request) {
 		assert request != null;
 		
-		Pimpam finedish;
+		Delor finedish;
 		int id;
 		
 		id = request.getModel().getInteger("id");
@@ -83,7 +83,7 @@ public class PimpamChefUpdateService implements AbstractUpdateService<Chef, Pimp
 	}
 
 	@Override
-	public void validate(final Request<Pimpam> request, final Pimpam entity, final Errors errors) {
+	public void validate(final Request<Delor> request, final Delor entity, final Errors errors) {
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
@@ -135,7 +135,7 @@ public class PimpamChefUpdateService implements AbstractUpdateService<Chef, Pimp
 	}
 
 	@Override
-	public void update(final Request<Pimpam> request, final Pimpam entity) {
+	public void update(final Request<Delor> request, final Delor entity) {
 		assert request != null;
 		assert entity != null;
 		
@@ -143,7 +143,7 @@ public class PimpamChefUpdateService implements AbstractUpdateService<Chef, Pimp
 	}
 	
 	@Override
-	public void onSuccess(final Request<Pimpam> request, final Response<Pimpam> response) {
+	public void onSuccess(final Request<Delor> request, final Response<Delor> response) {
 		assert request != null;
 		assert response != null;
 

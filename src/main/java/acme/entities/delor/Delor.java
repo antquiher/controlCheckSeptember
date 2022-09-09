@@ -1,4 +1,4 @@
-package acme.entities.pimpam;
+package acme.entities.delor;
 
 import java.util.Date;
 
@@ -15,6 +15,7 @@ import javax.validation.constraints.Pattern;
 
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.URL;
+import org.springframework.data.annotation.Transient;
 
 import acme.entities.artifact.Artifact;
 import acme.framework.datatypes.Money;
@@ -25,7 +26,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class Pimpam extends AbstractEntity{
+public class Delor extends AbstractEntity{
 protected static final long		serialVersionUID	= 1L;
 	
 	//Attributes patronage
@@ -33,7 +34,7 @@ protected static final long		serialVersionUID	= 1L;
 	
 	@NotBlank
 	@Column(unique = true)
-	@Pattern(regexp = "^[0-9]{2}/[0-9]{2}/[0-9]{2}$")
+	@Pattern(regexp = "^\\d{6}:[0-9]{2}[0-9]{2}[0-9]{2}$")
 	protected String code;
 	
 	@NotNull
@@ -64,6 +65,8 @@ protected static final long		serialVersionUID	= 1L;
 	@URL
 	protected String link;
 
+	@Transient
+	protected String auxiliarSeisNumeros;
 	
 	// Relationships ----------------------------------------------------------
 
